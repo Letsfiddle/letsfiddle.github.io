@@ -10,5 +10,6 @@ tagline: Exploring the web
 <ul class="posts">
   {% for post in site.posts %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2></li>
+	<br />{{post.excerpt}}<hr />
   {% endfor %}
 </ul>

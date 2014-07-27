@@ -8,7 +8,7 @@ title: Foxy Fans Radio
 ## {{post.title}}
 
          
-          <!-- BEGINS: RADIO PLAYER CODE -->
+          
 <script type="text/javascript" src="http://hosted.musesradioplayer.com/mrp.js"></script>
 <script type="text/javascript">
 MRP.insert({
@@ -25,7 +25,7 @@ MRP.insert({
 'height':60
 });
 </script>
-<!-- ENDS: RADIO PLAYER CODE -->
+
  	
 
 

@@ -2,15 +2,14 @@
 published: true
 layout: post
 title: Foxy Fans Radio
+ip: http://tuner.hit104.com
 ---
 
 
 ## {{post.title}}
 
-         
-      
-<audio controls src="http://tuner.hit104.com/;"><audio>
- 	
+
+This is just a test post {{post.ip}} 	
 
 
 

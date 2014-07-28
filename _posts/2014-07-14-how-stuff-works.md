@@ -5,7 +5,7 @@ title: How stuff works
 category : info
 tagline: "Supporting tagline"
 tags : [beginner, jekyll, tutorial]
-dpic: https://raw.githubusercontent.com/Letsfiddle/letsfiddle.github.com/master/thumbnails/200-200.jpg
+dpic: http://i0.wp.com/p1.pichost.me/i/60/1844618.png
 ---
 
 

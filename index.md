@@ -15,7 +15,7 @@ tagline: LetsFiddle - Exploring the web
 	<hr />
   </div>
   
-<div class="span4" >
+<div class="span4" style="float:right;" >
 <span>{{ post.date | date_to_string }}</span> &raquo;
 <br />
 <img src="{{post.dpic}}" />

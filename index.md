@@ -7,9 +7,9 @@ tagline: LetsFiddle - Exploring the web
 
 
 
-<ul class="posts">
+
   {% for post in site.posts %} 
-  <hr />
+  
 <div class="span4" style="float:left;">
 <span>{{ post.date | date_to_string }}</span> &raquo;
 <br />
@@ -20,6 +20,6 @@ tagline: LetsFiddle - Exploring the web
      <h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
 	<br />{{post.excerpt}}
   </div>
- 
+ <br /><hr />
   {% endfor %}
-</ul>
+

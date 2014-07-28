@@ -18,7 +18,7 @@ tagline: LetsFiddle - Exploring the web
 
 <div class="span8" style="float:right;">
      <h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2>
-	<br />{{post.excerpt | strip_html }}
+	<br />{{post.excerpt}}
   </div>
  
   {% endfor %}

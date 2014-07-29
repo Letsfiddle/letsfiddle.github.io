@@ -1,0 +1,39 @@
+---
+layout: page
+title: Home
+tagline: LetsFiddle - Exploring the web
+---
+{% include JB/setup %}
+
+<div class="span8" >
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+  <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+  <p class="author">
+    <span class="date">{{ post.date | date_to_string }}</span>
+  </p>
+  <div class="content">
+    {{ post.excerpt }}
+  </div>
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+    <div class="pagination btn-group">
+      {% if paginator.previous_page %}
+        <a class="btn prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" >&larr; Previous</a>
+      {% else %}
+        <a class="btn disabled prev">&larr; Previous</a>
+      {% endif %}
+	  <a class="btn" href="#" >{{ paginator.page }} of {{ paginator.total_pages }}</a>
+      {% if paginator.next_page %}
+        <a class="btn next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="{{ page.next.title }}">Next &rarr;</a>
+      {% else %}
+        <a class="btn next disabled">Next &rarr;</a>
+      {% endif %}
+    </div>
+{% endif %}
+</div>
+<div class="span3">
+<a href="#"><img src="http://static.squarespace.com/static/501cf1adc4aa0e146fe5827f/t/5117f817e4b0cd4cc718caa8/1360525336145/Shopify-Buttons-250x250-white.png"></a>
+</div>
+

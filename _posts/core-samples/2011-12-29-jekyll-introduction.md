@@ -3,6 +3,8 @@ layout: post
 category : lessons
 tagline: "Supporting tagline"
 tags : [intro, beginner, jekyll, tutorial]
+dpic: http://i0.wp.com/p1.pichost.me/i/60/1844618.png
+excerpt: Jekyll is a parsing engine bundled as a ruby gem used to build static websites from dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as "a simple, blog aware, static site generator
 ---
 {% include JB/setup %}
 

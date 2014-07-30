@@ -11,6 +11,13 @@
   <div class="span8">
     {{ content }}
     <hr>
+	<h1>Related Posts</h1>
+<ul>
+  {% for post in site.related_posts limit:5 %}
+  <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
+<hr />
     <div class="pagination btn-group">
       {% if page.previous %}
         <a class="btn prev" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a>
@@ -49,6 +56,16 @@
           {% include JB/tags_list %}
         </ul>
       </section>
-    {% endunless %}         
+    {% endunless %}   
+<section>
+<hr />
+<h4>Recent Posts</h4>
+<ul>
+  {% for post in site.posts limit:5 %}
+  <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>	
+
+</section>	
   </div>
 </div>

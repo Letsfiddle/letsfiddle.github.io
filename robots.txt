@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /_
+Disallow: /assets
+Disallow: /rake
+Disallow: /read
+Disallow: /robots.txt
+Disallow: /Histo
+
+
+
+User-agent: Mediapartners-Google
+Allow: /
+
+SITEMAP: http://letsfiddle.com/sitemap.txt

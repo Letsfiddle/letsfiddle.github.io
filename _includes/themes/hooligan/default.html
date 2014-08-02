@@ -10,6 +10,14 @@
     </title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
+	<meta content="{{page.dpic}}" property="og:image">
+	<meta content="{{ site.title }}" property="og:site_name">
+{% if page.title %}  <meta content="{{ page.title }}" property="og:title">{% endif %}
+{% if page.title %}  <meta content="article" property="og:type">{% else %}  <meta content="website" property="og:type">{% endif %}
+{% if page.description %}  <meta content="{{ page.description }}" property="og:description">{% else %}  <meta content="{{ site.description }}" property="og:description">{% endif %}
+{% if page.url %}  <meta content="http://www.letsfiddle.com{{ page.url }}" property="og:url"> {% endif %}
+<link rel="canonical" href="http://www.letsfiddle.com{{ page.url }}" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>

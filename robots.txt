@@ -5,10 +5,13 @@ Disallow: /rake
 Disallow: /read
 Disallow: /robots.txt
 Disallow: /Histo
+Disallow: /archive.html
+Disallow: /tags.html
+Disallow: /categories.htm
 
 
 
 User-agent: Mediapartners-Google
 Allow: /
 
-SITEMAP: http://letsfiddle.com/sitemap.txt
+SITEMAP: http://www.letsfiddle.com/sitemap.txt
